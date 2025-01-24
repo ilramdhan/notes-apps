@@ -9,6 +9,7 @@ class NaLogin extends Component
 {
     public $email = '';
     public $password = '';
+    public $remember = false;
 
     public function login()
     {
@@ -17,10 +18,9 @@ class NaLogin extends Component
             'password' => 'required|min:6',
         ]);
 
-        if (Auth::attempt(['email' => $this->email, 'password' => $this->password])) {
+        if (Auth::attempt(['email' => $this->email, 'password' => $this->password], $this->remember)) {
             session()->flash('message', 'Login successful!');
-            \Log::info('Login successful!');
-            return redirect()->route('/register');
+            return redirect()->route('home'); // Sesuaikan route
         }
 
         session()->flash('error', 'Invalid email or password!');

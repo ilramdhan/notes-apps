@@ -46,4 +46,9 @@ class NaUsers extends Authenticatable
         return $this->nau_password;
     }
 
+    public function socialAccounts()
+    {
+        return $this->hasMany(NaSocialAccounts::class);
+    }
+
 }
