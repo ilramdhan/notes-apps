@@ -2,6 +2,8 @@
 
 use Illuminate\Support\Facades\Route;
 use Modules\Auth\Http\Controllers\AuthController;
+use Modules\Auth\Livewire\NaLogin;
+use Modules\Auth\Livewire\NaRegist;
 
 /*
 |--------------------------------------------------------------------------
@@ -17,3 +19,6 @@ use Modules\Auth\Http\Controllers\AuthController;
 Route::group([], function () {
     Route::resource('auth', AuthController::class)->names('auth');
 });
+
+Route::get('/login', NaLogin::class)->name('login')->middleware('guest');
+Route::get('/register', NaRegist::class)->name('register')->middleware('guest');
