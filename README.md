@@ -107,20 +107,15 @@ The application is built with a modular structure using Laravel Modules. Below a
 - Archive functionality.
 - Social media sharing.
 
-### **API**
-- Exposes RESTful endpoints for external integrations.
-- Follows OpenAPI specifications.
-
-
-📖 API Documentation
-This application provides a comprehensive RESTful API. Documentation is available via OpenAPI (Swagger).
-
-To access the API documentation:
-
-Visit: /api/documentation after starting the server.
-📂 Project Structure
+### 📂 Project Structure
 Frontend: Tailwind CSS + Livewire for a modern and interactive UI.
 Backend: Laravel Modules + Sanctum for secure and modular architecture.
-API: RESTful API with OpenAPI specifications for seamless integration.
-🤝 Contributing
-We welcome contributions! Please follow the steps below:
+
+
+### 📧 Contact
+For any inquiries, feel free to reach out at ilhamram332@gmail.com
+
+### 🙌 Acknowledgements
+Special thanks to:
+
+Laravel, Livewire, Tailwind CSS, FLowbite, Laravel Modules, Laravel Sanctum, Laravel Socialite, Laravel Fortify.
